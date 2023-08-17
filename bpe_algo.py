@@ -94,7 +94,7 @@ class Encoder:
         return decoded
 
 if __name__ == "__main__":
-    encoder = Encoder.get_encoder("C:\\Users\\admin\\Documents\\Codes\\Python\\BPE-Encoder\\encoder.json", "C:\\Users\\admin\\Documents\\Codes\\Python\\BPE-Encoder\\vocab.bpe")
+    encoder = Encoder.get_encoder("encoder.json", "vocab.bpe")
     encoded_text = encoder.encode("hello world! This is a test string.")
     print("Encoded:", encoded_text)
     decoded_text = encoder.decode(encoded_text)
